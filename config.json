@@ -1,0 +1,32 @@
+{
+    "UNLOCODE":{
+        "URL": "https://unece.org/trade/cefact/UNLOCODE-Download",
+        "download_path": "/home/thang_sinay/port-editor-tool/data",
+        "output_path": "/home/thang_sinay/port-editor-tool/data", 
+        "output_file": "/home/thang_sinay/port-editor-tool/output/unlocode_ports.csv"
+    },
+
+    "Shipnext":{
+        "URL": "https://shipnext.com/port",
+        "API": "https://shipnext.com/api/v1/ports",
+        "headers":{
+            "User-Agent":"Mozilla/5.0",
+            "Referer": "",
+            "Cookie": "",
+            "Accept": "application/json"
+        },
+        "params": {
+            "page":1,
+            "limit":5
+        },
+        "output_file": "/home/thang_sinay/port-editor-tool/output/shipnext_ports.json"
+    },
+
+    "Database":{
+        "dbname":"unlocode",
+        "user":"postgres",
+        "password":"1234",
+        "host":"localhost",
+        "port":"5432"
+    }
+}
